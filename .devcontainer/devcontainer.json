@@ -1,0 +1,15 @@
+{
+    "name": "node dev container",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "runArgs": ["-u", "node"],
+    "settings": {
+        "workbench.colorTheme": "Markdown Editor Dark",
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "yarn install",
+    "extensions": [
+		"esbenp.prettier-vscode",
+		"ms-vscode.theme-markdownkit"
+	]
+}
